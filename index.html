@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1019: THE REVOLUTION</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0a0a0a;
+      color: #f1f1f1;
+    }
+
+    header {
+      background-color: #111;
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 2px solid #8a2be2;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #8a2be2;
+      text-shadow: 0 0 10px #8a2be2;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #bbb;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background-color: #000;
+      text-align: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #333;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #8a2be2;
+    }
+
+    .hero-image {
+      text-align: center;
+      background-color: #0a0a0a;
+      padding: 30px 0;
+      animation: fadeIn 2s ease-in-out;
+      opacity: 0;
+      animation-fill-mode: forwards;
+      animation-delay: 0.5s;
+    }
+
+    .hero-image img {
+      width: 90%;
+      max-width: 1000px;
+      border: 2px solid #8a2be2;
+      box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
+      border-radius: 10px;
+    }
+
+    /* Fade-in keyframes */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .about, .menu, .contact, .music {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #8a2be2;
+      border-left: 5px solid #8a2be2;
+      padding-left: 10px;
+      font-size: 2em;
+    }
+
+    .menu ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu li {
+      margin: 15px 0;
+      padding: 15px;
+      background-color: #1a1a1a;
+      border-left: 3px solid #8a2be2;
+      box-shadow: 0 0 10px rgba(138, 43, 226, 0.2);
+    }
+
+    .music-player {
+      background-color: #111;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-top: 30px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(138, 43, 226, 0.3);
+    }
+
+    audio {
+      width: 100%;
+      outline: none;
+    }
+
+    footer {
+      background-color: #111;
+      color: #666;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+      border-top: 1px solid #222;
+    }
+
+    a {
+      color: #8a2be2;
+    }
+
+    /* Animations for fade-in */
+    .about, .menu, .music, .contact {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    .about { animation-delay: 1.2s; }
+    .menu { animation-delay: 2s; }
+    .music { animation-delay: 2.8s; }
+    .contact { animation-delay: 3.6s; }
+
+    /* Smooth scroll for navigation */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>1019: THE REVOLUTION</h1>
+    <p>NEW SWAG INTERPRETED BEYOND THE MUSIC</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#menu">Producers</a>
+    <a href="#music">Music</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero-image">
+    <img src="1019.jpg" alt="1019 Revolution Banner" />
+  </div>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      1019: REVOLUTION is a world reborn in terms of music production.
+      We're not a label. We're a collective of prodigal beings delivering music unheard of to the world.
+      <br><br>
+      Inspired by the shadows and forged in silence, our collective of visionaries channels emotion through 
+      mystery, and the madness of melody.
+      1019 isn't about chasing the charts, it's about altering the waves.
+      <br><br>
+      You won't find us in the spotlight of the scene. We are the ones bending it.
+    </p>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>Range of Producers</h2>
+    <ul>
+      <li>1019Margiela</li>
+      <li>1019Pxblo</li>
+      <li>ic0nX</li> 
+      <li>bapo6evaa</li>
+      <li>karsa</li>
+      <li>trapstar</li>
+    </ul>
+  </section>
+
+  <section id="music" class="music">
+    <h2>Listen</h2>
+	<p> New Swag of the collective: </p>
+    <div class="music-player">
+      <p>@1019Margiela</p>
+      <audio controls>
+        <source src="inspiration.wav" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-player">
+      <p>@1019Pxblo</p>
+      <audio controls>
+        <source src="pablo.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-player">
+      <p>@ic0nX</p>
+      <audio controls>
+        <source src="thendo.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-player">
+      <p>@bapo6evaaa</p>
+      <audio controls>
+        <source src="capone.wav" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-player">
+      <p>@trapstar</p>
+      <audio controls>
+        <source src="trapstar.wav" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-player">
+      <p>@karsa</p>
+      <audio controls>
+        <source src="karsa.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Instagram: <a href="https://www.instagram.com/1019revolution/" target="_blank">@1019revolution</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 1019REVOLUTION. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
